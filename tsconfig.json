@@ -12,6 +12,8 @@
 	},
 	"exclude": [
 		"./src/components/_unused",
-		"node_modules"
+		"node_modules",
+		"dist",
+		"webpack.config*.js"
 	]
 }
