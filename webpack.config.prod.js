@@ -1,7 +1,7 @@
 var webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 var DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
-
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 function isExternal(module) {
 	var context = module.context;
@@ -103,6 +103,9 @@ module.exports = {
 		]
 	},
 	devtool: "source-map",
+	optimization: {
+		minimizer: [new UglifyJsPlugin()],
+	},
 	plugins: [
 		new ExtractTextPlugin("[name].css"),
 		new ExtractTextPlugin("[name].less"),
@@ -130,23 +133,23 @@ module.exports = {
 		// 	// async: "vendors",
 		// }),
 		new webpack.optimize.ModuleConcatenationPlugin(),
-		new webpack.optimize.UglifyJsPlugin({
-			compress: {
-				warnings: false,
-				screw_ie8: true,
-				conditionals: true,
-				unused: true,
-				comparisons: true,
-				sequences: true,
-				dead_code: true,
-				evaluate: true,
-				if_return: true,
-				join_vars: true
-			},
-			output: {
-				comments: false
-			}
-		}),
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	compress: {
+		// 		warnings: false,
+		// 		screw_ie8: true,
+		// 		conditionals: true,
+		// 		unused: true,
+		// 		comparisons: true,
+		// 		sequences: true,
+		// 		dead_code: true,
+		// 		evaluate: true,
+		// 		if_return: true,
+		// 		join_vars: true
+		// 	},
+		// 	output: {
+		// 		comments: false
+		// 	}
+		// }),
 		// new webpack.HashedModuleIdsPlugin(),
 		// new webpack.optimize.AggressiveMergingPlugin(),//Merge chunks 
 		new DuplicatePackageCheckerPlugin(),
