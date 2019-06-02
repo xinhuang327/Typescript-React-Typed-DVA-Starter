@@ -1,0 +1,382 @@
+body {
+	background: #fafafa;
+	padding-top: 55px;
+}
+
+a {
+    color: #f3711d;
+}
+
+a:hover {
+    color: #ff9a7d;
+}
+
+.ui.card>.content>a.header, .ui.cards>.card>.content>a.header {
+    color: #f3711d !important;
+}
+
+.ui.card>.content>a.header:hover, .ui.cards>.card>.content>a.header:hover {
+    color: #ff9a7d !important;
+}
+
+.ui.card:hover>.content>a.header, .ui.cards>.card:hover>.content>a.header {
+    color: #ff9a7d !important;
+}
+
+.ui.list .list>.item a.header, .ui.list>.item a.header {
+	color: #f3711d !important;
+	font-weight: normal;
+}
+
+.ui.list .list>.item a.header:hover, .ui.list>.item a.header:hover {
+	color: #ff9a7d !important;
+}
+
+.app-navBar input{
+    border-radius: 5px !important;
+}
+
+
+.app-detailNavArrow .ui.black.button, .app-detailNavArrow .ui.black.buttons .button {
+    background-color: transparent !important;
+	color:#eeeeee !important;
+	box-shadow:none !important;
+}
+
+.app-detailNavArrow .ui.black.button:hover, .app-detailNavArrow .ui.black.buttons .button:hover {
+    background-color: transparent !important;
+	color:white !important;
+	box-shadow:none !important;
+}
+
+.ui.menu {
+    font-size: 1.15em;
+	box-shadow: none;
+	opacity: 0.95;
+	border-left: none;
+	border-right: none;
+	border-top:none;
+}
+
+.ui.menu .item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:#555555;
+}
+
+.ui.menu .item.active, .ui.menu .ui.dropdown .menu>.active.item {
+	color:#F15D33 !important;
+    background-color: transparent !important;
+    border-bottom: solid 2px #ff9c4f;
+}
+
+.ui.menu .item:before {
+    background: transparent !important;
+}
+
+.ui.card {
+	margin-top: 0;
+}
+.ui.card:first-child {
+	margin-top: 0;
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra {
+	background:#f8f8f8;
+}
+
+@media only screen and (min-width: 992px){
+.ui.modal.mediaDetailModal {
+    width: 950px;
+    /* margin: 0 0 0 -475px; */
+}
+}
+
+@media only screen and (min-width: 1200px){
+.ui.modal.mediaDetailModal {
+    width: 1150px;
+    /* margin: 0 0 0 -575px; */
+}
+}
+
+@media only screen and (max-width: 768px) {
+.ui.modal.mediaDetailModal>.content {
+    padding: 0!important;
+}
+}
+
+@media only screen and (max-width: 768px){
+	.ui.modal>.actions {
+		padding-bottom: 1rem !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+.ui.modal.mediaDetailModal {
+	width:100% !important;
+	left: 0px !important;
+}
+.ui.dimmer {
+	padding: 0 !important;
+}
+.modals.dimmer .ui.scrolling.modal {
+    margin: 0 0!important;
+}
+}
+
+
+.app-shareButtons a {
+	opacity: 0.6;
+	transition: all 0.1s;
+}
+
+.app-shareButtons:hover a {
+	opacity: 1.0;
+}
+
+.app-shareButtons a:hover {
+	opacity: 1.0;
+}
+
+
+.ui.popup{
+	padding:0;
+	font-size: 1.2em;
+	max-width: 1200px;
+	min-width: 100px;
+}
+
+.ui.popup:before {
+	box-shadow: none;
+}
+
+.meta time{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ui.large.label, .ui.large.labels .label {
+    font-size: 16px;
+	margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+@media screen and (min-width: 769px) {
+    .userInfo {
+		border-radius: 0px; 
+		border-top-left-radius: 54px;
+		border-bottom-left-radius: 54px;
+		padding:6px;
+    }
+	.userInfoContent {
+		display: flex;
+	}
+	.userInfoLabels {
+		display: inline-block;
+	}
+	.userInfoAvatar {
+		width:140px !important;
+		height:140px !important;
+	}
+	.userInfoWrapper {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+    .userInfo {
+		border-radius: 4px; 
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		padding:10px 10px 5px 10px;
+    }
+	.userInfoContent {
+		display: block;
+	}
+	.userInfoLabels {
+		display: block;
+	}
+	.userInfoAvatar {
+		width:120px !important;
+		height:120px !important;
+	}
+
+	.favButton {
+		margin: 4px 0 !important;
+	}
+	.userInfoWrapper {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.userInfoContent .label {
+		display: none;
+	}
+	.userBio {
+		display: none;
+	}
+	.userInfoAvatar {
+		width:100px !important;
+		height:100px !important;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.userInfoContentMobile .label {
+		display: none;
+	}
+	.userBioMobile {
+		display: none;
+	}
+}
+
+.ui.card, .ui.cards>.card {
+	border-radius: 0 !important;
+}
+
+.ui.card>:first-child, .ui.cards>.card>:first-child {
+    border-radius: 0 !important;
+}
+
+.ui.modal>.icon:first-child+*, .ui.modal>:first-child:not(.icon) {
+    border-radius: 0 !important;
+}
+
+.ui.modal>:last-child {
+    border-radius: 0 !important;
+}
+
+.ui.card>:last-child, .ui.cards>.card>:last-child {
+    border-radius: 0 !important;
+}
+
+.signInModal {
+	
+}
+
+.signInModal .message {
+	margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.ui.modal .commentsList .content>.description {
+		padding: 0 0!important;
+	}
+}
+
+.favButton {
+	background-color: white !important;
+	border: solid 1px #cccccc !important;
+	margin-right: 15px !important;
+}
+
+.userInfoContent .label, .userInfoContentMobile .label {
+	margin-left:0;
+	margin-right: 5px;
+	background-color: #f0f0f0 !important;
+	font-weight: normal !important;
+}
+
+#app-viewButtons .ui.basic.buttons {
+	border: 1px solid rgba(34, 36, 38, 0.08);
+}
+
+#app-viewButtons .ui.basic.buttons .button {
+	border-left-color: rgba(34, 36, 38, 0.08);
+}
+
+#app-viewButtons .ui.basic.active.button, #app-viewButtons .ui.basic.buttons .active.button {
+    background: rgb(255, 255, 255)!important;
+    color: rgba(0,0,0,.95)!important;
+    border-bottom: solid 1px #ff9c57!important;
+}
+
+#app-viewButtons .ui.dropdown .menu .selected.item, #app-viewButtons .ui.dropdown.selected {
+    background: rgb(255, 237, 224) !important;
+}
+
+.navRightMenu .user.icon, .navRightMenu .ellipsis.icon {
+	margin-right: 0 !important;
+	color:#333333;
+}
+
+
+.ui.labeled.icon.button.optionsDropdown, .ui.labeled.icon.buttons.optionsDropdown .button {
+    padding-left: 2.07142857em!important;
+    padding-right: 0.5em!important;
+}
+
+.optionsDropdown.ui.labeled.icon.button>.icon {
+	background-color:transparent !important;
+}
+
+.optionsDropdown .menu {
+	width: 270px;
+	left:0 !important;
+	right:auto !important;
+}
+
+.optionsDropdown .menu>.item {
+    float: left;
+	line-height: 1.5em !important;
+}
+
+.app-navBar .ui.input input:focus{
+	border-color: #ffb400 !important;
+}
+
+.collectionImage .ui.floating.label {
+	top:8px;
+	right:8px;
+	left:auto;
+}
+
+.collectionImage img {
+	width:100%;
+	height:100%;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: #555555;
+}
+
+.ui.cards a.card:hover, .ui.link.card:hover, .ui.link.cards .card:hover, a.ui.card:hover {
+    -webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+.slick-prev:before, .slick-next:before {
+	font-size: 30px;
+}
+.slick-prev, .slick-next {
+	width: 33px;
+	height: 33px;
+}
+.slick-prev {
+	left:-33px;
+}
+.slick-next {
+	right:-33px;
+}
+#searchResultPopover.ui.popup:before {
+	display: none;
+}
+
+.searchPopupDimmer{
+	background-color: rgba(255,255,255,.2) !important;
+}
+
+.cicularImage {
+	border-radius: 1000px !important;
+}
+
+.userCollection .card:hover .collectionCardRemoveLabel {
+	opacity: 1.0;
+}
+
+.collectionCardRemoveLabel {
+	opacity: 0.0;
+}
+
+.collectionCardRemoveLabel, .collectionCardRemoveLabel .icon {
+	cursor: pointer !important;
+}

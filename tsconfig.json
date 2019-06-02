@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"sourceMap": false,
+		"noImplicitAny": false,
+		"module": "es2015",
+		"moduleResolution": "node",
+		"target": "es2015",
+		"jsx": "preserve",
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true
+	},
+	"exclude": [
+		"./src/components/_unused",
+		"node_modules"
+	]
+}
