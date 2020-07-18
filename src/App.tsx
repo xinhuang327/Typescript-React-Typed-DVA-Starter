@@ -1,4 +1,11 @@
-
+//
+//  App.tsx
+//  Typed-DVA-Starter
+//
+//	React Application entrypoint
+//
+//  Copyright © 2019 HuangXin. All rights reserved.
+//
 import "babel-polyfill"
 import dva from 'typed-dva'
 

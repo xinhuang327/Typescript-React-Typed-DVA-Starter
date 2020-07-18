@@ -1,3 +1,12 @@
+//
+//  types.ts
+//  Typed-DVA-Starter
+//
+//	Provide syntax sugar when binding Effects/Reducers to route views
+//
+//  Copyright © 2019 HuangXin. All rights reserved.
+//
+
 import { Model, Action } from "typed-dva"
 import { Dispatch } from "redux"
 
